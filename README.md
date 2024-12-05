@@ -1,44 +1,43 @@
+# Checkout de Presença do Módulo 2 - Aprendizado de Máquina Supervisionado: Regressão
 
-# Checkout de Presença do Módulo 5 - Aplicações Práticas em Aprendizado de Máquina no Google Colab
-
-Este repositório contém um notebook do Google Colab que demonstra aplicações práticas em aprendizado de máquina, utilizando o dataset de marketing bancário da UCI Machine Learning Repository.
+Este repositório contém um notebook do Google Colab que demonstra aplicações práticas de aprendizado de máquina supervisionado, utilizando técnicas de regressão para prever valores contínuos.
 
 ## Descrição
 
 O notebook realiza as seguintes etapas:
 
-1. **Instalação e Importação de Bibliotecas**:
-   - Instalação da biblioteca `ucimlrepo` para acessar datasets da UCI.
-   - Importação de bibliotecas necessárias como `pandas`, `seaborn`, `matplotlib`, `sklearn`, entre outras.
+1. **Carregamento e Verificação dos Dados**:
+   - Upload do arquivo de dados.
+   - Verificação se o arquivo foi carregado corretamente.
 
-2. **Carregamento do Dataset**:
-   - Utilização da função `fetch_ucirepo` para carregar o dataset de marketing bancário (ID: 222) da UCI.
-   - Separação dos dados em features (`X`) e targets (`y`).
+2. **Análise Exploratória de Dados (EDA)**:
+   - Exibição de informações gerais sobre o dataset.
+   - Estatísticas descritivas das variáveis.
 
-3. **Análise Exploratória de Dados (EDA)**:
-   - Análise descritiva das variáveis numéricas.
-   - Visualização da distribuição da idade dos clientes.
-   - Análise da distribuição dos tipos de emprego.
+3. **Pré-processamento dos Dados**:
+   - Seleção das colunas relevantes para a análise.
+   - Tratamento de valores nulos preenchendo com a mediana.
+   - Normalização dos dados.
 
-4. **Pré-processamento dos Dados**:
-   - Divisão dos dados em conjuntos de treino e teste.
-   - Aplicação de `OneHotEncoder` para variáveis categóricas e normalização para variáveis numéricas.
+4. **Modelagem de Regressão**:
+   - Aplicação de modelos de regressão para prever valores contínuos.
+   - Avaliação dos modelos utilizando métricas de desempenho.
 
-5. **Treinamento do Modelo**:
-   - Treinamento de um classificador Random Forest.
-   - Avaliação do modelo utilizando métricas como `classification_report` e `roc_auc_score`.
+5. **Análise dos Resultados**:
+   - Interpretação dos resultados dos modelos de regressão.
+   - Visualização dos resultados através de gráficos.
 
 ## Requisitos
 
 - Python 3.x
-- Bibliotecas: `ucimlrepo`, `pandas`, `seaborn`, `matplotlib`, `sklearn`
+- Bibliotecas: `pandas`, `numpy`, `matplotlib`, `scikit-learn`
 
 ## Como Usar
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   cd seu-repositorio
+   git clone https://github.com/Datasciencelaw/Datascience.git
+   cd Datascience
    ```
 
 2. Instale as dependências:
@@ -51,13 +50,13 @@ O notebook realiza as seguintes etapas:
 
 ## Estrutura do Repositório
 
-- `notebook.ipynb`: Notebook do Google Colab com o código completo.
+- `Checkout_de_Presença_do_Módulo_2_Aprendizado_de_máquina_supervisionado_regressão.ipynb`: Notebook do Google Colab com o código completo.
 - `requirements.txt`: Lista de dependências necessárias para executar o notebook.
 
 ## Resultados
 
-- **Acurácia do Modelo**: 88%
-- **ROC AUC**: 0.841
+- **Modelos de Regressão Aplicados**: Diversos modelos de regressão foram aplicados para prever valores contínuos.
+- **Métricas de Desempenho**: Avaliação dos modelos utilizando métricas como R², MAE, MSE, etc.
 
 ## Contribuição
 
@@ -72,22 +71,24 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para ma
 ### Exemplo de `requirements.txt`
 
 ```txt
-ucimlrepo
 pandas
-seaborn
+numpy
 matplotlib
 scikit-learn
 ```
 
-### Como Adicionar o README ao GitHub
+### Como Adicionar o README ao Novo Galho no GitHub
 
-1. Crie um arquivo chamado `README.md` no diretório raiz do seu repositório.
-2. Copie e cole o conteúdo acima no arquivo `README.md`.
-3. Adicione e faça commit do arquivo ao seu repositório:
+1. Crie um novo galho (branch) no seu repositório:
    ```bash
-   git add README.md
-   git commit -m "Adiciona README ao repositório"
-   git push origin main
+   git checkout -b aprendizado-de-maquina-supervisionado-regressao
    ```
 
-Isso deve ajudar a documentar seu projeto de forma clara e organizada no GitHub. Se precisar de mais alguma coisa ou tiver alguma dúvida, estou à disposição!
+2. Crie um arquivo chamado `README.md` no diretório raiz do seu repositório.
+3. Copie e cole o conteúdo acima no arquivo `README.md`.
+4. Adicione e faça commit do arquivo ao seu repositório:
+   ```bash
+   git add README.md
+   git commit -m "Adiciona README para aprendizado de máquina supervisionado com regressão"
+   git push origin aprendizado-de-maquina-supervisionado-regressao
+   ```
