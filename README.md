@@ -78,16 +78,3 @@ seaborn
 matplotlib
 scikit-learn
 ```
-
-### Como Adicionar o README ao GitHub
-
-1. Crie um arquivo chamado `README.md` no diretório raiz do seu repositório.
-2. Copie e cole o conteúdo acima no arquivo `README.md`.
-3. Adicione e faça commit do arquivo ao seu repositório:
-   ```bash
-   git add README.md
-   git commit -m "Adiciona README ao repositório"
-   git push origin main
-   ```
-
-Isso deve ajudar a documentar seu projeto de forma clara e organizada no GitHub. Se precisar de mais alguma coisa ou tiver alguma dúvida, estou à disposição!
