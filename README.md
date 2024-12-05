@@ -1,37 +1,43 @@
+# Checkout de Presença do Módulo 4 - Aprendizado de Máquina Não Supervisionado
 
-# Checkout de Presença do Módulo 5 - Aplicações Práticas em Aprendizado de Máquina no Google Colab
-
-Este repositório contém um notebook do Google Colab que demonstra aplicações práticas em aprendizado de máquina, utilizando o dataset de marketing bancário da UCI Machine Learning Repository.
+Este repositório contém um notebook do Google Colab que demonstra aplicações práticas de aprendizado de máquina não supervisionado, utilizando o algoritmo K-means para clustering de dados de habitação.
 
 ## Descrição
 
 O notebook realiza as seguintes etapas:
 
-1. **Instalação e Importação de Bibliotecas**:
-   - Instalação da biblioteca `ucimlrepo` para acessar datasets da UCI.
-   - Importação de bibliotecas necessárias como `pandas`, `seaborn`, `matplotlib`, `sklearn`, entre outras.
+1. **Upload e Verificação do Arquivo**:
+   - Upload do arquivo de dados.
+   - Verificação se o arquivo foi carregado corretamente.
 
-2. **Carregamento do Dataset**:
-   - Utilização da função `fetch_ucirepo` para carregar o dataset de marketing bancário (ID: 222) da UCI.
-   - Separação dos dados em features (`X`) e targets (`y`).
+2. **Análise Exploratória de Dados (EDA)**:
+   - Exibição de informações gerais sobre o dataset.
+   - Estatísticas descritivas das variáveis.
 
-3. **Análise Exploratória de Dados (EDA)**:
-   - Análise descritiva das variáveis numéricas.
-   - Visualização da distribuição da idade dos clientes.
-   - Análise da distribuição dos tipos de emprego.
+3. **Pré-processamento dos Dados**:
+   - Seleção das colunas relevantes para o clustering.
+   - Tratamento de valores nulos preenchendo com a mediana.
+   - Normalização dos dados.
 
-4. **Pré-processamento dos Dados**:
-   - Divisão dos dados em conjuntos de treino e teste.
-   - Aplicação de `OneHotEncoder` para variáveis categóricas e normalização para variáveis numéricas.
+4. **Determinação do Número Ótimo de Clusters**:
+   - Utilização do método do cotovelo para determinar o número ótimo de clusters.
 
-5. **Treinamento do Modelo**:
-   - Treinamento de um classificador Random Forest.
-   - Avaliação do modelo utilizando métricas como `classification_report` e `roc_auc_score`.
+5. **Aplicação do Algoritmo K-means**:
+   - Aplicação do K-means com o número ótimo de clusters.
+   - Adição dos rótulos dos clusters ao dataset original.
+
+6. **Análise dos Clusters**:
+   - Cálculo dos valores médios das características para cada cluster.
+   - Exibição da análise dos clusters.
+
+7. **Salvamento dos Dados Clusterizados**:
+   - Salvamento dos dados clusterizados em um novo arquivo CSV.
+   - Download do arquivo CSV no Google Colab.
 
 ## Requisitos
 
 - Python 3.x
-- Bibliotecas: `ucimlrepo`, `pandas`, `seaborn`, `matplotlib`, `sklearn`
+- Bibliotecas: `pandas`, `numpy`, `matplotlib`, `sklearn`
 
 ## Como Usar
 
@@ -56,8 +62,8 @@ O notebook realiza as seguintes etapas:
 
 ## Resultados
 
-- **Acurácia do Modelo**: 88%
-- **ROC AUC**: 0.841
+- **Clusters Identificados**: 4
+- **Análise dos Clusters**: Valores médios das características para cada cluster.
 
 ## Contribuição
 
@@ -72,22 +78,25 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para ma
 ### Exemplo de `requirements.txt`
 
 ```txt
-ucimlrepo
 pandas
-seaborn
+numpy
 matplotlib
 scikit-learn
 ```
 
-### Como Adicionar o README ao GitHub
+### Como Adicionar o README ao Novo Galho no GitHub
 
-1. Crie um arquivo chamado `README.md` no diretório raiz do seu repositório.
-2. Copie e cole o conteúdo acima no arquivo `README.md`.
-3. Adicione e faça commit do arquivo ao seu repositório:
+1. Crie um novo galho (branch) no seu repositório:
    ```bash
-   git add README.md
-   git commit -m "Adiciona README ao repositório"
-   git push origin main
+   git checkout -b novo-galho
    ```
 
-Isso deve ajudar a documentar seu projeto de forma clara e organizada no GitHub. Se precisar de mais alguma coisa ou tiver alguma dúvida, estou à disposição!
+2. Crie um arquivo chamado `README.md` no diretório raiz do seu repositório.
+3. Copie e cole o conteúdo acima no arquivo `README.md`.
+4. Adicione e faça commit do arquivo ao seu repositório:
+   ```bash
+   git add README.md
+   git commit -m "Adiciona README ao novo galho"
+   git push origin novo-galho
+   ```
+
