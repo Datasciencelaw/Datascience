@@ -76,19 +76,3 @@ numpy
 matplotlib
 scikit-learn
 ```
-
-### Como Adicionar o README ao Novo Galho no GitHub
-
-1. Crie um novo galho (branch) no seu repositório:
-   ```bash
-   git checkout -b aprendizado-de-maquina-supervisionado-regressao
-   ```
-
-2. Crie um arquivo chamado `README.md` no diretório raiz do seu repositório.
-3. Copie e cole o conteúdo acima no arquivo `README.md`.
-4. Adicione e faça commit do arquivo ao seu repositório:
-   ```bash
-   git add README.md
-   git commit -m "Adiciona README para aprendizado de máquina supervisionado com regressão"
-   git push origin aprendizado-de-maquina-supervisionado-regressao
-   ```
